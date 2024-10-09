@@ -2,23 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    border: 1px solid #fff; /*for debugging */
+}
 
-  .menu-container {
+.menu-container {
     color: #fff;
     background-color: beige;
-    padding: 20px 0;
+    padding: 5px 0;
     display: flex;
-    justify-content: space-around;
-  }
+    justify-content: center;
+}
 
-  .menu {
-    border: 1px solid #fff; /*for debugging */
+.menu {
     width: 900px;
-    
-  }
+    display: flex;
+}
 
-  img .menu {
-    max-width: 10px;
-    height:auto;
-  }
+.logo {
+    flex: 2;
+}
+
+.me {
+    flex: initial;
+
+}
+  
+.gallery {
+    flex: initial;
+}
+
+
+img.menu-item {
+    max-width: 65px;
+    height: 100%; 
+    object-fit: contain;
+    padding: 5px 2px;
+}
